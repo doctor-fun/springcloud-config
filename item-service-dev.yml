@@ -2,6 +2,14 @@ spring:
   #名字很重要，方便feign通过Eureka拿到
   application:
     name: item-service
+  cloud:
+    config:
+      override-none: true
+  rabbitmq:
+    host: 101.37.33.252
+    port: 5672
+    username: admin
+    password: admin
 server:
   port: 8001
 eureka:

@@ -4,6 +4,14 @@ sp:
 spring:
   application:
     name: user-service
+  cloud:
+    config:
+      override-none: true
+  rabbitmq:
+    host: 101.37.33.252
+    port: 5672
+    username: admin
+    password: admin
 server:
   port: 8101
 eureka:
